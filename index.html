@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b0a08" />
+    <meta name="description" content="每日读经视频：和合本真人经文朗读、逐段讲解、全文朗读与祷告应用。" />
+    <title>DailyBible｜每日读经</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0b0a08;
+        --panel: #15120e;
+        --cream: #f2eadc;
+        --gold: #c7a76c;
+        --muted: #968a76;
+        --line: #6d5838;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background:
+          radial-gradient(circle at 70% -10%, rgba(199, 167, 108, 0.16), rgba(199, 167, 108, 0) 34rem),
+          var(--bg);
+        color: var(--cream);
+        font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      }
+
+      header, main, footer {
+        width: min(1120px, calc(100% - 36px));
+        margin-inline: auto;
+      }
+
+      header {
+        padding: 72px 0 42px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .eyebrow {
+        margin: 0 0 18px;
+        color: var(--gold);
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.24em;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: "Songti SC", "STSong", serif;
+        font-size: clamp(48px, 9vw, 92px);
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .intro {
+        max-width: 700px;
+        margin: 24px 0 0;
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.8;
+      }
+
+      main { padding: 42px 0 72px; }
+
+      .featured {
+        display: grid;
+        grid-template-columns: minmax(280px, 440px) 1fr;
+        gap: clamp(28px, 5vw, 72px);
+        align-items: center;
+        padding: clamp(24px, 5vw, 56px);
+        border: 1px solid var(--line);
+        background: rgba(21, 18, 14, 0.82);
+      }
+
+      .video-frame {
+        overflow: hidden;
+        border: 1px solid rgba(199, 167, 108, 0.55);
+        background: #000;
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.48);
+      }
+
+      video {
+        display: block;
+        width: 100%;
+        aspect-ratio: 9 / 16;
+        background: #000;
+      }
+
+      .date {
+        margin: 0 0 14px;
+        color: var(--gold);
+        font-size: 15px;
+        letter-spacing: 0.13em;
+      }
+
+      h2, h3 {
+        margin: 0;
+        font-family: "Songti SC", "STSong", serif;
+      }
+
+      h2 { font-size: clamp(34px, 5vw, 58px); line-height: 1.28; }
+
+      .summary {
+        margin: 24px 0;
+        color: #d8cdbc;
+        font-size: 17px;
+        line-height: 1.9;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .tags li {
+        padding: 8px 12px;
+        border: 1px solid rgba(199, 167, 108, 0.36);
+        border-radius: 999px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .archive-title {
+        margin: 64px 0 24px;
+        color: var(--gold);
+        font-size: 18px;
+        letter-spacing: 0.16em;
+      }
+
+      .archive {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+      }
+
+      .card {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 22px;
+        align-items: center;
+        padding: 18px;
+        border: 1px solid rgba(109, 88, 56, 0.76);
+        background: rgba(21, 18, 14, 0.62);
+      }
+
+      .card video { max-height: 240px; }
+      .card h3 { font-size: 27px; line-height: 1.4; }
+      .card p { margin: 10px 0 0; color: var(--muted); line-height: 1.7; }
+
+      footer {
+        padding: 28px 0 48px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      @media (max-width: 780px) {
+        header { padding-top: 48px; }
+        .featured { grid-template-columns: 1fr; }
+        .video-frame { width: min(100%, 430px); margin-inline: auto; }
+        .archive { grid-template-columns: 1fr; }
+      }
+
+      @media (max-width: 480px) {
+        header, main, footer { width: min(100% - 24px, 1120px); }
+        .featured { padding: 16px; }
+        .card { grid-template-columns: 112px 1fr; gap: 16px; }
+        .card h3 { font-size: 22px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p class="eyebrow">DAILY BIBLE · 每日精读</p>
+      <h1>每日读经</h1>
+      <p class="intro">以和合本经文为中心，包含分段真人朗读、经文讲解、全文朗读与祷告应用。</p>
+    </header>
+
+    <main>
+      <article class="featured">
+        <div class="video-frame">
+          <video controls playsinline preload="metadata" poster="assets/posters/john-10.jpg">
+            <source src="videos/2026-10-14/john-10.mp4" type="video/mp4" />
+            你的浏览器暂不支持视频播放。
+          </video>
+        </div>
+        <div>
+          <p class="date">2026 年 10 月 14 日</p>
+          <h2>约翰福音<br />第十章</h2>
+          <p class="summary">从羊圈的比喻，到羊的门和好牧人，再到耶稣确认自己的身份。经文采用 WordProject 和合本真人男声，讲解与祷告采用本地生成的普通话配音。</p>
+          <ul class="tags">
+            <li>和合本真人朗读</li>
+            <li>三段经文讲解</li>
+            <li>全文朗读</li>
+            <li>祷告应用</li>
+          </ul>
+        </div>
+      </article>
+
+      <h2 class="archive-title">往期视频</h2>
+      <section class="archive" aria-label="往期视频">
+        <article class="card">
+          <video controls playsinline preload="metadata" poster="assets/posters/luke-23.jpg">
+            <source src="videos/2026-10-03/luke-23.mp4" type="video/mp4" />
+          </video>
+          <div>
+            <p class="date">2026 年 10 月 3 日</p>
+            <h3>路加福音<br />第二十三章</h3>
+            <p>每日读经竖屏视频。</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <video controls playsinline preload="metadata" poster="assets/posters/luke-24.jpg">
+            <source src="videos/2026-10-04/luke-24.mp4" type="video/mp4" />
+          </video>
+          <div>
+            <p class="date">2026 年 10 月 4 日</p>
+            <h3>路加福音<br />第二十四章</h3>
+            <p>每日读经竖屏视频。</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>DailyBible · 经文讲解与普通话配音</footer>
+
+    <script>
+      const players = Array.from(document.querySelectorAll("video"));
+      players.forEach((player) => {
+        player.addEventListener("play", () => {
+          players.forEach((other) => {
+            if (other !== player) other.pause();
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-14",
+  "book": "约翰福音",
+  "chapter": 10,
+  "translation": "中文和合本（简体）",
+  "scripture_audio": {
+    "provider": "WordProject",
+    "source_page": "https://wordproject.org/bibles/audio/02_chinese/b43.htm",
+    "source_url": "https://audio2.abiblica.org/bibles/app/audio/4/43/10.mp3",
+    "voice": "真人男声",
+    "same_source_for_segments_and_full_reading": true
+  },
+  "narration": {
+    "engine": "Qwen3-TTS-1.7B-CustomVoice-MLX-4bit",
+    "voice": "Serena",
+    "usage": ["分段标题", "经文讲解", "全文朗读标题", "祷告应用"]
+  },
+  "video": {
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "duration_seconds": 890.158
+  }
+}
