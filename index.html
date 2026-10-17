@@ -127,6 +127,11 @@
         font-size: 13px;
       }
 
+      .audio-player {
+        width: 100%;
+        margin-top: 24px;
+      }
+
       .archive-title {
         margin: 64px 0 24px;
         color: var(--gold);
@@ -186,26 +191,41 @@
     <main>
       <article class="featured">
         <div class="video-frame">
-          <video controls playsinline preload="metadata" poster="assets/posters/john-10.jpg">
-            <source src="videos/2026-10-14/john-10.mp4" type="video/mp4" />
+          <video controls playsinline preload="metadata" poster="assets/posters/john-13.png">
+            <source src="videos/2026-10-17/john-13.mp4" type="video/mp4" />
             你的浏览器暂不支持视频播放。
           </video>
         </div>
         <div>
-          <p class="date">2026 年 10 月 14 日</p>
-          <h2>约翰福音<br />第十章</h2>
-          <p class="summary">从羊圈的比喻，到羊的门和好牧人，再到耶稣确认自己的身份。经文采用 WordProject 和合本真人男声，讲解与祷告采用本地生成的普通话配音。</p>
+          <p class="date">2026 年 10 月 17 日</p>
+          <h2>约翰福音<br />第十三章</h2>
+          <p class="summary">从耶稣为门徒洗脚，到预言被卖、赐下彼此相爱的新命令，并预言彼得三次不认主。经文采用 WordProject 和合本真人男声，讲解与祷告采用本地 Qwen3-TTS 自然中年男声。</p>
           <ul class="tags">
             <li>和合本真人朗读</li>
-            <li>三段经文讲解</li>
+            <li>四段经文讲解</li>
             <li>全文朗读</li>
             <li>祷告应用</li>
           </ul>
+          <audio class="audio-player" controls preload="metadata">
+            <source src="videos/2026-10-17/john-13.m4a" type="audio/mp4" />
+            你的浏览器暂不支持音频播放。
+          </audio>
         </div>
       </article>
 
       <h2 class="archive-title">往期视频</h2>
       <section class="archive" aria-label="往期视频">
+        <article class="card">
+          <video controls playsinline preload="metadata" poster="assets/posters/john-10.jpg">
+            <source src="videos/2026-10-14/john-10.mp4" type="video/mp4" />
+          </video>
+          <div>
+            <p class="date">2026 年 10 月 14 日</p>
+            <h3>约翰福音<br />第十章</h3>
+            <p>羊的门、好牧人，以及耶稣身份的宣告。</p>
+          </div>
+        </article>
+
         <article class="card">
           <video controls playsinline preload="metadata" poster="assets/posters/luke-23.jpg">
             <source src="videos/2026-10-03/luke-23.mp4" type="video/mp4" />
