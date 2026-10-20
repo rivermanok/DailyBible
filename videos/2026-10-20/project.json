@@ -1,0 +1,33 @@
+{
+  "project": "DailyBible",
+  "date": "2026-10-20",
+  "book": "约翰福音",
+  "chapter": 16,
+  "translation": "中文和合本（简体）",
+  "scripture_audio": {
+    "provider": "WordProject",
+    "source_page": "https://wordproject.org/bibles/audio/02_chinese/b43.htm",
+    "source_url": "https://audio2.abiblica.org/bibles/app/audio/4/43/16.mp3",
+    "voice": "真人男声",
+    "human_reading_duration_seconds": 319.755,
+    "same_source_as_previous": true,
+    "same_source_for_segments_and_full_reading": true
+  },
+  "narration": {
+    "engine": "Qwen3-TTS-1.7B-Base-MLX-4bit",
+    "voice": "CC0女声D-柔和讲解",
+    "style": "自然、稳重、柔和的普通话女声",
+    "usage": [
+      "分段标题",
+      "经文讲解",
+      "全文朗读标题",
+      "祷告应用"
+    ]
+  },
+  "composition": {
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "duration": 721.137
+  }
+}
