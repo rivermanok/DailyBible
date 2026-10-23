@@ -29,5 +29,13 @@
     "height": 1280,
     "fps": 30,
     "duration": 874.814
+  },
+  "delivery": {
+    "desktop_fallback": "H.264/AAC MP4",
+    "mobile_primary": "HLS",
+    "mobile_resolution": "540x960",
+    "hls_segment_seconds": 6,
+    "hls_video_profile": "H.264 Main Level 3.1",
+    "hls_audio": "AAC-LC 96 kbps"
   }
 }
