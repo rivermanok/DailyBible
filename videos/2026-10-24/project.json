@@ -1,0 +1,51 @@
+{
+  "project": "DailyBible",
+  "date": "2026-10-24",
+  "book": "约翰福音",
+  "chapter": 20,
+  "translation": "中文和合本（简体）",
+  "scripture_audio": {
+    "provider": "WordProject",
+    "source_page": "https://wordproject.org/bibles/audio/02_chinese/b43.htm",
+    "scripture_page": "https://wordproject.org/bibles/gb/43/20.htm",
+    "source_url": "https://audio2.abiblica.org/bibles/app/audio/4/43/20.mp3",
+    "resolved_url": "https://www.wordproaudio.net/bibles/app/audio/4/43/20.mp3",
+    "voice": "真人男声",
+    "human_reading_duration_seconds": 319.155,
+    "same_source_as_previous": true,
+    "same_source_for_segments_and_full_reading": true
+  },
+  "narration": {
+    "engine": "Qwen3-TTS-1.7B-Base-MLX-4bit",
+    "voice": "CC0女声D-柔和讲解",
+    "style": "自然、稳重、柔和的普通话女声",
+    "usage": [
+      "分段标题",
+      "经文讲解",
+      "全文朗读标题",
+      "祷告应用"
+    ],
+    "audio_join": "每句保留自然前后沿，25 ms 淡入淡出，0.22 秒句间停顿"
+  },
+  "composition": {
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "duration": 769.233,
+    "sections": [
+      "1–10 节：主耶稣的复活",
+      "11–18 节：主耶稣向马利亚显现",
+      "19–25 节：主耶稣向门徒们显现（多马不在场）",
+      "26–29 节：主耶稣再向门徒显现（多马在场）",
+      "30–31 节：约翰福音的写作目的"
+    ]
+  },
+  "delivery": {
+    "desktop_fallback": "H.264/AAC MP4",
+    "mobile_primary": "HLS",
+    "mobile_resolution": "540x960",
+    "hls_segment_seconds": 6,
+    "hls_video_profile": "H.264 Main Level 3.1",
+    "hls_audio": "AAC-LC 96 kbps"
+  }
+}
