@@ -25,10 +25,39 @@ jobs:
         uses: actions/checkout@v6
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Prepare Pages site
+        shell: bash
+        run: |
+          mkdir -p _site
+          rsync -a \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='_site/' \
+            --exclude='videos/*/*.m4a' \
+            --exclude='videos/*/*-hls/' \
+            ./ _site/
+
+          find videos -mindepth 2 -maxdepth 2 -type f -name '*.m4a' \
+            | sort \
+            | tail -n 7 \
+            | while IFS= read -r audio_file; do
+                mkdir -p "_site/$(dirname "$audio_file")"
+                cp "$audio_file" "_site/$audio_file"
+              done
+
+          find videos -mindepth 2 -maxdepth 2 -type d -name '*-hls' \
+            | sort \
+            | tail -n 7 \
+            | while IFS= read -r hls_dir; do
+                mkdir -p "_site/$(dirname "$hls_dir")"
+                cp -R "$hls_dir" "_site/$hls_dir"
+              done
       - name: Upload static site
         uses: actions/upload-pages-artifact@v4
         with:
-          path: .
+          path: _site
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          timeout: 1200000
