@@ -24,3 +24,13 @@ https://rivermanok.github.io/DailyBible/
 - 2026-10-03｜路加福音第二十三章
 
 视频制作规范位于 [`daily-bible-study-video/SKILL.md`](daily-bible-study-video/SKILL.md)。
+
+## 经文解释编排规则
+
+制作时先判断图片中传道人解释的实际篇幅与内容完整度，不使用固定字数硬切：
+
+- 解释较长，并且能够自然对应各经文分段时，把解释分配到各段，在每段经文之后加入该段的“经文解释”。
+- 解释较短，无法为每段提供完整且有实质内容的解释时，各段只播放标题和经文；全部分段经文读完后，只集中加入一次“经文解释”。
+- 无法明确判断时，优先采用集中解释。不得为了凑齐每段解释而扩写、重复、牵强对应或拆散原意。
+
+完整制作流程和验收标准见 [`daily-bible-study-video/SKILL.md`](daily-bible-study-video/SKILL.md)，画面与声音细则见 [`daily-bible-study-video/references/video-spec.md`](daily-bible-study-video/references/video-spec.md)。
