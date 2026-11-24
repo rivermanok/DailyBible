@@ -1,0 +1,41 @@
+{
+  "project": "DailyBible",
+  "date": "2026-11-24",
+  "book": "罗马书",
+  "chapter": 2,
+  "translation": "中文和合本（简体）",
+  "scripture_audio": {
+    "provider": "WordProject",
+    "scripture_page": "https://wordproject.org/bibles/gb/45/2.htm",
+    "resolved_url": "https://www.wordproaudio.net/bibles/app/audio/4/45/2.mp3",
+    "voice": "真人男声",
+    "human_reading_duration_seconds": 229.555,
+    "same_source_as_previous": true,
+    "same_source_for_segments_and_full_reading": true
+  },
+  "narration": {
+    "engine": "Qwen3-TTS-1.7B-Base-MLX-4bit",
+    "voice": "CC0女声D-柔和讲解",
+    "usage": ["分段标题", "经文解释", "全文朗读标题", "祷告应用"]
+  },
+  "composition": {
+    "width": 720,
+    "height": 1280,
+    "fps": 30,
+    "duration_seconds": 805.873,
+    "sections": [
+      "1–16节：神审判的标准",
+      "17–29节：犹太人假冒为善"
+    ],
+    "hymn": "奇异恩典",
+    "body_background_music": true
+  },
+  "delivery": {
+    "desktop_fallback": "H.264/AAC MP4",
+    "mobile_primary": "HLS",
+    "mobile_resolution": "540x960",
+    "hls_segment_seconds": 6,
+    "hls_video_profile": "H.264 Main Level 3.1",
+    "hls_audio": "AAC-LC 96 kbps"
+  }
+}
