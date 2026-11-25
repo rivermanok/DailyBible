@@ -35,3 +35,9 @@ https://rivermanok.github.io/DailyBible/
 - 无法明确判断时，优先采用集中解释。不得为了凑齐每段解释而扩写、重复、牵强对应或拆散原意。
 
 完整制作流程和验收标准见 [`daily-bible-study-video/SKILL.md`](daily-bible-study-video/SKILL.md)，画面与声音细则见 [`daily-bible-study-video/references/video-spec.md`](daily-bible-study-video/references/video-spec.md)。
+
+## 歌诗与转场
+
+- 片头使用“每日读经｜精读”、当天日期和“歌诗赞美－歌名”的组合样式。中文歌诗只唱第一节，保留乐谱，歌词从下往上滚动。
+- 正文保留原有黑金版式、上下标题与分段停顿，可使用呼应经文的宗教风格背景图。片头同一首歌的器乐版作为正文伴奏，朗读或讲解时自动降低音量。
+- 祷告结束后保留当前画面片刻，再直接交叉淡入完整中文歌诗。歌诗画面保留乐谱和向上滚动的歌词，并与竖排《约翰福音》3:16 同屏。转场不得插入空白页或先淡到黑屏。
