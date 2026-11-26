@@ -26,6 +26,10 @@ https://rivermanok.github.io/DailyBible/
 
 视频制作规范位于 [`daily-bible-study-video/SKILL.md`](daily-bible-study-video/SKILL.md)。
 
+## 每日手机发布
+
+常规每日精读在成片验收后继续生成手机 HLS、更新首页并推送 GitHub Pages。线上验证通过后交付手机播放页和 MP4 直链。具体步骤见[每日手机发布规范](daily-bible-study-video/SKILL.md#每日手机发布)。
+
 ## 经文解释编排规则
 
 制作时先判断图片中传道人解释的实际篇幅与内容完整度，不使用固定字数硬切：
